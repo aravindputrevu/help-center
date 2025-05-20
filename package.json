@@ -1,0 +1,46 @@
+{
+   "name": "help-center-framework",
+   "version": "1.0.0",
+   "description": "A framework for creating customizable help centers and knowledge bases",
+   "main": "lib/index.js",
+   "bin": {
+      "help-center": "./bin/help-center.js"
+   },
+   "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "create": "node ./bin/help-center.js create"
+   },
+   "dependencies": {
+      "@fortawesome/fontawesome-svg-core": "^6.7.2",
+      "@fortawesome/free-brands-svg-icons": "^6.7.2",
+      "@fortawesome/free-regular-svg-icons": "^6.7.2",
+      "@fortawesome/free-solid-svg-icons": "^6.7.2",
+      "@fortawesome/react-fontawesome": "^0.2.2",
+      "next": "13.4.7",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "commander": "^11.0.0",
+      "chalk": "^4.1.2",
+      "fs-extra": "^11.1.1",
+      "inquirer": "^8.2.5",
+      "gray-matter": "^4.0.3",
+      "remark": "^14.0.3",
+      "remark-html": "^15.0.2"
+   },
+   "peerDependencies": {
+      "next": ">=13.0.0",
+      "react": ">=17.0.0",
+      "react-dom": ">=17.0.0"
+   },
+   "keywords": [
+      "help-center",
+      "knowledge-base",
+      "documentation",
+      "docs",
+      "next.js"
+   ],
+   "author": "",
+   "license": "MIT"
+}
