@@ -5,3 +5,6 @@ for branch in $(git branch -r | grep 'upstream/' | sed 's/ *upstream\///'); do
     git checkout -b $branch upstream/$branch
     git push origin $branch
 done
+git checkout -b add-utils
+mkdir python
+cd python
