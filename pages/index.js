@@ -7,11 +7,14 @@ import {
   faBook,
   faCreditCard,
   faCode,
-  faUser
+  faUser,
+  faSun, 
+  faMoon 
 } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { categories, articles } from '../data';
 import styles from '../styles/Home.module.css';
+import { useTheme } from '../context/ThemeContext'; // Import useTheme
 
 const iconMap = {
   'rocket': faRocket,
@@ -22,6 +25,7 @@ const iconMap = {
 
 export default function Home() {
   const [query, setQuery] = useState('');
+  const { theme, toggleTheme } = useTheme(); // Use theme context
   const filteredArticles = articles.filter(article =>
     article.title.toLowerCase().includes(query.toLowerCase())
   );
@@ -30,21 +34,31 @@ export default function Home() {
     <div className={styles.container}>
       <header className={styles.header}>
         <Link href="/" className={styles.logo}>Acme Corp</Link>
+        <button onClick={toggleTheme} className={styles.themeToggle}>
+          <FontAwesomeIcon icon={theme === 'light' ? faMoon : faSun} />
+        </button>
       </header>
       <main className={styles.main}>
         <div className={styles.searchContainer}>
           <h1>Advice and answers from the Acme Corp Team</h1>
           <div className={styles.searchWrapper}>
+            <label htmlFor="search-input" className={styles.visuallyHidden}>
+              Search help articles
+            </label>
             <FontAwesomeIcon 
               icon={faSearch} 
               className={styles.searchIcon}
+              aria-hidden="true"
             />
             <input
+              id="search-input"
               type="text"
               placeholder="Search for articles..."
               className={styles.search}
               value={query}
               onChange={(e) => setQuery(e.target.value)}
+              aria-label="Search help articles"
+              role="searchbox"
             />
           </div>
         </div>
