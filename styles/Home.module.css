@@ -8,6 +8,9 @@
   background-color: #0f172a;
   padding: 1.5rem 2rem;
   color: white;
+  display: flex; /* Enable flexbox for alignment */
+  justify-content: space-between; /* Space between logo and toggle */
+  align-items: center; /* Vertically align items */
 }
 
 .logo {
@@ -175,4 +178,81 @@
 .socialIcon svg {
   width: 1.25rem !important;
   height: 1.25rem;
+}
+
+.themeToggle {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.25rem; /* Adjust icon size as needed */
+}
+
+.themeToggle:hover {
+  color: #cbd5e0; /* Lighter color on hover */
+}
+
+/* Dark Mode adjustments for Home.module.css */
+/* You might need to add specific dark mode overrides for components in this file */
+/* For example, if a card has a light background, you\'ll want to change it for dark mode */
+
+body.dark-mode .search {
+  background-color: #2d3748; /* Darker search input background */
+  border-color: #4a5568; /* Darker border */
+  color: #e2e8f0; /* Light text for input */
+}
+
+body.dark-mode .search::placeholder {
+  color: #a0aec0; /* Lighter placeholder text */
+}
+
+body.dark-mode .search:focus {
+  border-color: #63b3ed; /* Lighter blue for focus */
+  background-color: #1a202c;
+}
+
+body.dark-mode .categoryCard {
+  background: #2d3748; /* Darker card background */
+  border-color: #4a5568;
+}
+
+body.dark-mode .categoryCard:hover {
+  border-color: #63b3ed;
+}
+
+body.dark-mode .categoryCard h2 {
+  color: #e2e8f0;
+}
+
+body.dark-mode .categoryCard p,
+body.dark-mode .articleCount {
+  color: #a0aec0;
+}
+
+body.dark-mode .searchResults {
+  background: #2d3748;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3); /* Adjust shadow for dark mode */
+}
+
+body.dark-mode .searchResults li a {
+  color: #e2e8f0;
+}
+
+body.dark-mode .searchResults li a:hover {
+  color: #63b3ed;
+}
+
+body.dark-mode .footer {
+  border-top-color: #4a5568;
+}
+
+body.dark-mode .footerLogo,
+body.dark-mode .footerLink,
+body.dark-mode .socialIcon {
+  color: #a0aec0;
+}
+
+body.dark-mode .footerLink:hover,
+body.dark-mode .socialIcon:hover {
+  color: #e2e8f0;
 }
