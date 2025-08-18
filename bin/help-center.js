@@ -70,14 +70,6 @@ program
   });
 
 program
-  .command('build')
-  .description('Build the help center for production')
-  .action(() => {
-    console.log(chalk.blue('Building help center...'));
-    execSync('next build', { stdio: 'inherit' });
-  });
-
-program
   .command('start')
   .description('Start the development server')
   .action(() => {
