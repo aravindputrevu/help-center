@@ -1,6 +1,6 @@
 # simple_utils.py - A tiny utility library
 def reverse_string(text):
-"""Reversesgg the characters in a string."""
+"""Reversesghhg the characters in a string."""
 return text[::-1]
 def count_words(sentence):
 return len(sentence.split())
