@@ -24,6 +24,8 @@ reviews:
   auto_review:
     enabled: true
     auto_incremental_review: true
+    base_branches:
+      - ^help-center-.*$
     drafts: false
     
   # Tool integrations
