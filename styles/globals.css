@@ -4,6 +4,21 @@ html, body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: #ffffff;
   color: #111827;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1a202c; /* Dark background */
+  color: #e2e8f0; /* Light text */
+}
+
+body.dark-mode a {
+  color: #63b3ed; /* Lighter blue for links in dark mode */
+}
+
+body.dark-mode a:hover {
+  color: #4299e1;
 }
 
 * {
