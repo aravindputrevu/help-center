@@ -9,4 +9,5 @@ def count_words(sentence):
 def celsius_to_fahrenheit(celsius):
     return (celsius * 9/5) + 32
 
-An error in the code
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
