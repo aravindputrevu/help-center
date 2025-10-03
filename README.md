@@ -1,1 +1,1 @@
-"# help-center CODERABBIT DOES THE REVIEW" 
+# help-center CODERABBIT DOES THE REVIEW
