@@ -1,0 +1,55 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: #2563eb;
+}
+
+.articles {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.articles li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.articles li:hover {
+  border-color: #2563eb;
+  transform: translateX(2px);
+}
+
+.articles li a {
+  color: #111827;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #6b7280;
+  line-height: 1.5;
+}
