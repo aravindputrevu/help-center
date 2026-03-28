@@ -6,4 +6,5 @@ reviews:
     - path: "**/*.py"
       instructions: |
         Review for: missing type hints on all function signatures, missing or incomplete docstrings, unhandled edge cases such as empty inputs or division by zero, and opportunities to use Python idioms such as list comprehensions.
-  tone_instructions: "Be concise. Each comment must include a specific suggested fix."
+
+tone_instructions: "Be concise. Each comment must include a specific suggested fix."
