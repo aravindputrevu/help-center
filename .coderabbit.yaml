@@ -1,0 +1,13 @@
+reviews:
+  auto_review:
+    enabled: true
+    drafts: false
+
+  path_instructions:
+    - path: "**/*.py"
+      instructions: >
+        Review for: missing type hints on all function signatures, missing or
+        incomplete docstrings, unhandled edge cases such as empty inputs or
+        division by zero, and opportunities to use Python idioms such as list
+        comprehensions.
+ 
