@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "en-US"
+tone_instructions: "Be concise. Each comment must include a specific suggested fix."
+reviews:
+  auto_review:
+    enabled: true
+    drafts: false
+  path_instructions:
+    - path: "**/*.py"
+      instructions: |
+        Review for: missing type hints on all function signatures, missing or
+        incomplete docstrings, unhandled edge cases such as empty inputs or
+        division by zero, and opportunities to use Python idioms such as list
+        comprehensions.
