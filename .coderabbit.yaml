@@ -39,10 +39,6 @@ reviews:
       enabled: true
     biome:
       enabled: true
-    eslint:
-      enabled: true
-    gitleaks:
-      enabled: true
 
 # Chat settings
 chat:
