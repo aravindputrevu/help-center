@@ -1,4 +1,4 @@
-# math_utils.py - Mathematical utility functions 
+# math_utils.py - Mathematical utility functions - comment 1
 def add(a, b): return a + b 
 def multiply(a, b): return a * b 
 def is_even(n): return n % 2 == 0 
