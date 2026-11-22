@@ -1,6 +1,8 @@
 # .coderabbit.yaml reviews:
-auto_review: enabled: true drafts: false
 reviews:
+  auto_review:
+    enabled: true
+    drafts: false
   path_instructions:
   - path: "**/*.py"
     instructions: |
